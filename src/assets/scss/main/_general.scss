@@ -2,6 +2,7 @@ body {
   height: 100vh;
   font-family: $spaceGrotesk;
   overflow-y: hidden;
+  position: relative;
 
   #root {
     height: 100%;
@@ -11,7 +12,14 @@ body {
 
       .main-bg {
         height: 100%;
-        width: 33%;
+        min-width: 33%;
+        position: absolute;
+        @include positions(0%, 0%);
+      }
+
+      .flex-container {
+        position: absolute;
+        z-index: 10;
       }
     }
   }

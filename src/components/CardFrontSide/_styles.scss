@@ -1,0 +1,7 @@
+.card-front {
+  height: 210px;
+  width: 355px;
+  border-radius: 8px;
+  padding: 30px;
+  @include bgImage(url('../../assets/image/bg-card-front.png'), cover, no-repeat);
+}

@@ -33,3 +33,9 @@
   border-style: $style;
   border-color: $color;
 }
+
+@mixin bgImage($url, $size, $repeat) {
+  background-image: $url;
+  background-size: $size;
+  background-repeat: $repeat;
+}

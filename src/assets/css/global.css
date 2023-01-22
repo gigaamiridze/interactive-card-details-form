@@ -55,6 +55,7 @@ body {
   height: 100vh;
   font-family: "Space Grotesk", sans-serif;
   overflow-y: hidden;
+  position: relative;
 }
 body #root {
   height: 100%;
@@ -64,5 +65,23 @@ body #root .App {
 }
 body #root .App .main-bg {
   height: 100%;
-  width: 33%;
+  min-width: 33%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translate(0%, 0%);
+}
+body #root .App .flex-container {
+  position: absolute;
+  z-index: 10;
+}
+
+.card-front {
+  height: 210px;
+  width: 355px;
+  border-radius: 8px;
+  padding: 30px;
+  background-image: url("../../assets/image/bg-card-front.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
