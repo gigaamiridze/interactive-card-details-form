@@ -1,0 +1,18 @@
+body {
+  height: 100vh;
+  font-family: $spaceGrotesk;
+  overflow-y: hidden;
+
+  #root {
+    height: 100%;
+
+    .App {
+      height: 100%;
+
+      .main-bg {
+        height: 100%;
+        width: 33%;
+      }
+    }
+  }
+}

@@ -50,3 +50,19 @@ table {
 a {
   text-decoration: none;
 }
+
+body {
+  height: 100vh;
+  font-family: "Space Grotesk", sans-serif;
+  overflow-y: hidden;
+}
+body #root {
+  height: 100%;
+}
+body #root .App {
+  height: 100%;
+}
+body #root .App .main-bg {
+  height: 100%;
+  width: 33%;
+}
