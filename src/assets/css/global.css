@@ -80,8 +80,38 @@ body #root .App .flex-container {
   height: 210px;
   width: 355px;
   border-radius: 8px;
-  padding: 30px;
+  padding: 22px;
   background-image: url("../../assets/image/bg-card-front.png");
   background-size: cover;
   background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+  align-items: inherit;
+  flex-direction: column;
+}
+.card-front .card-logo {
+  width: 70px;
+}
+.card-front .card-number {
+  font-size: 20px;
+  color: hsl(0deg, 0%, 100%);
+  text-transform: none;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+.card-front .flex-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+}
+.card-front .flex-box span {
+  font-size: 12px;
+  color: hsl(0deg, 0%, 100%);
+  text-transform: none;
+  letter-spacing: 1.5px;
+}
+.card-front .flex-box .name {
+  text-transform: uppercase;
 }

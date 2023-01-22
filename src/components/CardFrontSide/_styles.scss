@@ -2,6 +2,33 @@
   height: 210px;
   width: 355px;
   border-radius: 8px;
-  padding: 30px;
-  @include bgImage(url('../../assets/image/bg-card-front.png'), cover, no-repeat);
+  padding: 22px;
+  @include bgImage(url('../../assets/image/bg-card-front.png'), cover, no-repeat); 
+  @include flexProperty(space-between, inherit);
+  flex-direction: column;
+
+  .card-logo {
+    width: 70px;
+  }
+
+  .card-number {
+    @include textProperty(20px, $white, none);
+    font-family: $spaceGrotesk;
+    font-weight: $medium;
+    letter-spacing: 3px;
+  }
+
+  .flex-box {
+    @include flexProperty(space-between, center);
+    margin-top: 25px;
+
+    span {
+      @include textProperty(12px, $white, none);
+      letter-spacing: 1.5px;
+    }
+
+    .name {
+      text-transform: uppercase;
+    }
+  }
 }
