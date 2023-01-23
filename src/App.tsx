@@ -3,6 +3,7 @@ import mainBg from './assets/image/bg-main-desktop.png';
 // Importing Components
 import CardFrontSide from './components/CardFrontSide/CardFrontSide';
 import CardBackSide from './components/CardBackSide/CardBackSide';
+import CardForm from './components/CardForm/CardForm';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <CardFrontSide />
           <CardBackSide />
         </div>
+        <CardForm />
       </div>
     </div>
   )

@@ -20,6 +20,8 @@ body {
       .flex-container {
         position: absolute;
         z-index: 10;
+        @include flexProperty(space-between, center);
+        column-gap: 100px;
       }
     }
   }

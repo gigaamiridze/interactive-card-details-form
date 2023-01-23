@@ -74,6 +74,10 @@ body #root .App .main-bg {
 body #root .App .flex-container {
   position: absolute;
   z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 100px;
 }
 
 .card-front {
@@ -133,4 +137,12 @@ body #root .App .flex-container {
   position: absolute;
   top: 95px;
   right: 20px;
+}
+
+form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+form .form-group .flex-box {
+  display: flex;
 }
