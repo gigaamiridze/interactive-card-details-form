@@ -139,9 +139,23 @@ body #root .App .flex-container {
   right: 20px;
 }
 
+form {
+  max-width: 400px;
+  width: 100%;
+}
 form .form-group {
   display: flex;
   flex-direction: column;
+}
+form .form-group label {
+  font-size: 13px;
+  color: hsl(278deg, 68%, 11%);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+form .form-group input {
+  margin-top: 7px;
 }
 form .form-group .flex-box {
   display: flex;

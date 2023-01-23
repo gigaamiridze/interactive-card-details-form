@@ -1,7 +1,20 @@
 form {
+  max-width: 400px;
+  width: 100%;
+
   .form-group {
     display: flex;
     flex-direction: column;
+
+    label {
+      @include textProperty(13px, $veryDarkViolet, uppercase);
+      font-weight: $semiBold;
+      letter-spacing: 1px;
+    }
+
+    input {
+      margin-top: 7px;
+    }
 
     .flex-box {
       display: flex;
