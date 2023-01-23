@@ -2,6 +2,7 @@ import React from 'react';
 import mainBg from './assets/image/bg-main-desktop.png';
 // Importing Components
 import CardFrontSide from './components/CardFrontSide/CardFrontSide';
+import CardBackSide from './components/CardBackSide/CardBackSide';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <div className='flex-container'>
         <div className='cards'>
           <CardFrontSide />
+          <CardBackSide />
         </div>
       </div>
     </div>

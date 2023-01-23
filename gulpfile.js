@@ -13,4 +13,5 @@ exports.buildStyles = buildStyles;
 exports.watch = function () {
   gulp.watch('src/assets/scss/**/*.scss', buildStyles);
   gulp.watch('src/components/CardFrontSide/*.scss', buildStyles);
+  gulp.watch('src/components/CardBackSide/*.scss', buildStyles);
 };

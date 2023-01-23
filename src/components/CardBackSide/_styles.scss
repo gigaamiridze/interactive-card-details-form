@@ -1,0 +1,15 @@
+.card-back {
+  height: 210px;
+  width: 355px;
+  border-radius: 8px;
+  position: relative;
+  @include bgImage(url('../../assets/image/bg-card-back.png'), cover, no-repeat); 
+
+  .cvc {
+    @include textProperty(14px, $white, none);
+    letter-spacing: 1.5px;
+    position: absolute;
+    top: 95px;
+    right: 20px;
+  }
+}
