@@ -58,6 +58,12 @@ body #root .App .flex-container {
   transform: translate(-50%, -50%);
 }
 
+form button, form .form-group input {
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
 body {
   height: 100vh;
   font-family: "Space Grotesk", sans-serif;
@@ -185,6 +191,9 @@ form .form-group input::placeholder {
   color: hsl(279deg, 6%, 55%);
   text-transform: none;
 }
+form .form-group input:focus, form .form-group input:hover {
+  border-color: hsl(278deg, 68%, 11%);
+}
 form .form-group .wrapper-box {
   display: flex;
   justify-content: space-between;
@@ -212,4 +221,7 @@ form button {
   font-family: "Space Grotesk", sans-serif;
   font-weight: 500;
   letter-spacing: 1px;
+}
+form button:hover {
+  filter: opacity(0.85);
 }

@@ -25,10 +25,16 @@ form {
       border: none;
       outline: none;
       @include border(1px, solid, $darkGrayishViolet);
+      @extend %elementsTransition;
 
       &::placeholder {
         color: $darkGrayishViolet;
         text-transform: none;
+      }
+
+      &:focus,
+      &:hover {
+        border-color: $veryDarkViolet;
       }
     }
 
@@ -59,5 +65,10 @@ form {
     font-family: $spaceGrotesk;
     font-weight: $medium;
     letter-spacing: 1px;
+    @extend %elementsTransition;
+
+    &:hover {
+      filter: opacity(0.85);
+    }
   }
 }

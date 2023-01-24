@@ -2,3 +2,7 @@
   position: absolute;
   @include positions(50%, 50%);
 }
+
+%elementsTransition {
+  @include transition(all, 0.3s, ease-in-out);
+}
