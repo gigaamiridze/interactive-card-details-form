@@ -1,0 +1,27 @@
+.thank-you-box {
+  width: 350px;
+  @include flexProperty(inherit, center);
+  flex-direction: column;
+
+  img {
+    width: 55px;
+  }
+
+  h3 {
+    @include textProperty(19px, $veryDarkViolet, uppercase);
+    font-weight: $medium;
+    letter-spacing: 2px;
+    margin: 25px 0 13px;
+  }
+
+  p {
+    @include textProperty(12px, $darkGrayishViolet, none);
+    font-weight: $medium;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+  }
+
+  button {
+    @extend %buttonStyles;
+  }
+}

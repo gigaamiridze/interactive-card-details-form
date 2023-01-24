@@ -4,6 +4,7 @@ import mainBg from './assets/image/bg-main-desktop.png';
 import CardFrontSide from './components/CardFrontSide/CardFrontSide';
 import CardBackSide from './components/CardBackSide/CardBackSide';
 import CardForm from './components/CardForm/CardForm';
+import ThankYou from './components/ThankYou/ThankYou';
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
           <CardFrontSide />
           <CardBackSide />
         </div>
-        <CardForm />
+        {/* <CardForm /> */}
+        <ThankYou />
       </div>
     </div>
   )

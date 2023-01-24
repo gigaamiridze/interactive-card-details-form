@@ -15,4 +15,5 @@ exports.watch = function () {
   gulp.watch('src/components/CardFrontSide/*.scss', buildStyles);
   gulp.watch('src/components/CardBackSide/*.scss', buildStyles);
   gulp.watch('src/components/CardForm/*.scss', buildStyles);
+  gulp.watch('src/components/ThankYou/*.scss', buildStyles);
 };

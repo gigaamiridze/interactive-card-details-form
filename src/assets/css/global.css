@@ -58,10 +58,29 @@ body #root .App .flex-container {
   transform: translate(-50%, -50%);
 }
 
-form button, form .form-group input {
+form .form-group input, .thank-you-box button, form button {
   transition-property: all;
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
+}
+
+.thank-you-box button, form button {
+  width: 100%;
+  height: 40px;
+  background-color: hsl(278deg, 68%, 11%);
+  border: none;
+  border-radius: 7px;
+  margin-top: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  color: hsl(0deg, 0%, 100%);
+  text-transform: capitalize;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.thank-you-box button:hover, form button:hover {
+  filter: opacity(0.85);
 }
 
 body {
@@ -207,21 +226,29 @@ form .form-group .wrapper-box .flex-box {
   display: flex;
   column-gap: 10px;
 }
-form button {
-  width: 100%;
-  height: 40px;
-  background-color: hsl(278deg, 68%, 11%);
-  border: none;
-  border-radius: 7px;
-  margin-top: 5px;
-  cursor: pointer;
-  font-size: 14px;
-  color: hsl(0deg, 0%, 100%);
-  text-transform: capitalize;
-  font-family: "Space Grotesk", sans-serif;
+.thank-you-box {
+  width: 350px;
+  display: flex;
+  justify-content: inherit;
+  align-items: center;
+  flex-direction: column;
+}
+.thank-you-box img {
+  width: 55px;
+}
+.thank-you-box h3 {
+  font-size: 19px;
+  color: hsl(278deg, 68%, 11%);
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin: 25px 0 13px;
+}
+.thank-you-box p {
+  font-size: 12px;
+  color: hsl(279deg, 6%, 55%);
+  text-transform: none;
   font-weight: 500;
   letter-spacing: 1px;
-}
-form button:hover {
-  filter: opacity(0.85);
+  margin-bottom: 25px;
 }

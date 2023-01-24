@@ -54,21 +54,6 @@ form {
   }
 
   button {
-    width: 100%;
-    height: 40px;
-    background-color: $veryDarkViolet;
-    border: none;
-    border-radius: 7px;
-    margin-top: 5px;
-    cursor: pointer;
-    @include textProperty(14px, $white, capitalize);
-    font-family: $spaceGrotesk;
-    font-weight: $medium;
-    letter-spacing: 1px;
-    @extend %elementsTransition;
-
-    &:hover {
-      filter: opacity(0.85);
-    }
+    @extend %buttonStyles;
   }
 }
