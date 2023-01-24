@@ -1,23 +1,50 @@
 form {
-  max-width: 400px;
+  max-width: 350px;
   width: 100%;
 
   .form-group {
     display: flex;
     flex-direction: column;
+    margin-bottom: 25px;
 
     label {
-      @include textProperty(13px, $veryDarkViolet, uppercase);
+      @include textProperty(12px, $veryDarkViolet, uppercase);
       font-weight: $semiBold;
       letter-spacing: 1px;
     }
 
     input {
+      width: 100%;
+      height: 40px;
+      @include textProperty(14px, $veryDarkViolet, capitalize);
+      font-weight: $medium;
+      font-family: $spaceGrotesk;
+      letter-spacing: 1px;
+      border-radius: 7px;
+      padding: 0 15px;
       margin-top: 7px;
+      border: none;
+      outline: none;
+      @include border(1px, solid, $darkGrayishViolet);
+
+      &::placeholder {
+        color: $darkGrayishViolet;
+        text-transform: none;
+      }
     }
 
-    .flex-box {
-      display: flex;
+    .wrapper-box {
+      @include flexProperty(space-between, center);
+      column-gap: 20px;
+
+      label:first-child {
+        width: 83%;
+      }
+
+      .flex-box {
+        display: flex;
+        column-gap: 10px;
+      }
     }
   }
 }
