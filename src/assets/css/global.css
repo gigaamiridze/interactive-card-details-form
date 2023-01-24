@@ -51,6 +51,13 @@ a {
   text-decoration: none;
 }
 
+body #root .App .flex-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 body {
   height: 100vh;
   font-family: "Space Grotesk", sans-serif;
@@ -72,7 +79,6 @@ body #root .App .main-bg {
   transform: translate(0%, 0%);
 }
 body #root .App .flex-container {
-  position: absolute;
   z-index: 10;
   display: flex;
   justify-content: space-between;
@@ -84,6 +90,8 @@ body #root .App .flex-container {
   height: 210px;
   width: 355px;
   border-radius: 8px;
+  box-shadow: 0 1px 20px -5px #000000;
+  margin: 0 0 30px -70px;
   padding: 22px;
   background-image: url("../../assets/image/bg-card-front.png");
   background-size: cover;
@@ -124,6 +132,7 @@ body #root .App .flex-container {
   height: 210px;
   width: 355px;
   border-radius: 8px;
+  box-shadow: 0 1px 20px -5px #000000;
   position: relative;
   background-image: url("../../assets/image/bg-card-back.png");
   background-size: cover;
@@ -140,8 +149,7 @@ body #root .App .flex-container {
 }
 
 form {
-  max-width: 350px;
-  width: 100%;
+  width: 350px;
 }
 form .form-group {
   display: flex;

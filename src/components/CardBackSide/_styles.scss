@@ -2,6 +2,7 @@
   height: 210px;
   width: 355px;
   border-radius: 8px;
+  box-shadow: $boxShadow;
   position: relative;
   @include bgImage(url('../../assets/image/bg-card-back.png'), cover, no-repeat); 
 

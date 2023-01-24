@@ -18,7 +18,7 @@ body {
       }
 
       .flex-container {
-        position: absolute;
+        @extend %centeredElement;
         z-index: 10;
         @include flexProperty(space-between, center);
         column-gap: 100px;

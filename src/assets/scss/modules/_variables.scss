@@ -8,6 +8,10 @@ $white: hsl(0, 0%, 100%);
 $lightGrayishViolet: hsl(270, 3%, 87%);
 $darkGrayishViolet: hsl(279, 6%, 55%);
 $veryDarkViolet: hsl(278, 68%, 11%);
+$black: #000000;
+
+// Card's Box Shadow
+$boxShadow: 0 1px 20px -5px $black;
 
 // Font Family
 $spaceGrotesk: 'Space Grotesk', sans-serif;
