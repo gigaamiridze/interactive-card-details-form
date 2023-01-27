@@ -15,8 +15,8 @@ function App() {
           <CardFrontSide />
           <CardBackSide />
         </div>
-        {/* <CardForm /> */}
-        <ThankYou />
+        <CardForm />
+        {/* <ThankYou /> */}
       </div>
     </div>
   )
