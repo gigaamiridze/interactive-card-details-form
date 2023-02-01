@@ -1,8 +1,15 @@
 import React, { ChangeEvent, FormEvent } from 'react';
 import { FormProps } from '../../types/form';
 
-function CardForm({setFormData}: FormProps) {
+function CardForm({formData, setFormData}: FormProps) {
+
   const handleInput = (event: ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = event.target;
+    if (name === 'number') event.target.value = value.replace(/\s/g, '').replace(/(.{4})/g, '$1 ').trim().slice(0, 19);   
+    if (name === 'mm' || name === 'yy') event.target.value = value.toString().replace(/[^0-9]/g, '').substring(0, 2); 
+    if (name === 'mm' && value > '12') event.target.value = '12';
+    if (name === 'cvc') event.target.value = value.substring(0, 4); 
+
     setFormData((prevState) => ({
       ...prevState,
       [event.target.name]: event.target.value,
@@ -29,7 +36,7 @@ function CardForm({setFormData}: FormProps) {
         <label htmlFor="number">card number</label>
         <input 
           type="text" 
-          maxLength={16} 
+          maxLength={19} 
           placeholder="e.g. 1234 5678 9123 0000" 
           name="number" 
           id="number" 
