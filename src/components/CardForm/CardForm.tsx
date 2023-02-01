@@ -1,7 +1,7 @@
 import React, { ChangeEvent, FormEvent } from 'react';
 import { FormProps } from '../../types/form';
 
-function CardForm({formData, setFormData}: FormProps) {
+function CardForm({formData, setFormData, setValidate}: FormProps) {
 
   const handleInput = (event: ChangeEvent<HTMLInputElement>) => {
     const { name, value } = event.target;
@@ -18,6 +18,7 @@ function CardForm({formData, setFormData}: FormProps) {
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    setValidate(true);
   }
 
   return (

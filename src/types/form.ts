@@ -9,6 +9,7 @@ export type Inputs = {
 export type FormProps = {
   formData: Inputs;
   setFormData: React.Dispatch<React.SetStateAction<Inputs>>;
+  setValidate: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 export type CardProps = {
