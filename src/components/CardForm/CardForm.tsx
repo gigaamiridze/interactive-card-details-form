@@ -2,7 +2,6 @@ import React, { ChangeEvent, FormEvent } from 'react';
 import { FormProps } from '../../types/form';
 
 function CardForm({formData, setFormData, setValidate}: FormProps) {
-
   const handleInput = (event: ChangeEvent<HTMLInputElement>) => {
     const { name, value } = event.target;
     if (name === 'number') event.target.value = value.replace(/\s/g, '').replace(/(.{4})/g, '$1 ').trim().slice(0, 19);   

@@ -39,3 +39,11 @@
   background-size: $size;
   background-repeat: $repeat;
 }
+
+@mixin animation($name, $duration, $fillMode, $timingFunc, $iterCount) {
+  animation-name: $name;
+  animation-duration: $duration;
+  animation-fill-mode: $fillMode;
+  animation-timing-function: $timingFunc;
+  animation-iteration-count: $iterCount;
+}

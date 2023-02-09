@@ -53,6 +53,10 @@ form {
     }
   }
 
+  .shake {
+    @include animation(shake, 0.7s, both, cubic-bezier(0.36, 0.07, 0.19, 0.97), 1);
+  }
+
   button {
     @extend %buttonStyles;
   }

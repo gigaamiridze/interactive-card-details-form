@@ -13,7 +13,7 @@ export const defaultFormData = {
   mm: null, 
   yy: null, 
   cvc: null,
-};
+}
 
 function App() {
   const [formData, setFormData] = useState<Inputs>(defaultFormData);

@@ -83,6 +83,21 @@ form .form-group input, .thank-you-box button, form button {
   filter: opacity(0.85);
 }
 
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+    background: hsl(0deg, 100%, 66%);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
 body {
   height: 100vh;
   font-family: "Space Grotesk", sans-serif;
@@ -225,6 +240,13 @@ form .form-group .wrapper-box label:first-child {
 form .form-group .wrapper-box .flex-box {
   display: flex;
   column-gap: 10px;
+}
+form .shake {
+  animation-name: shake;
+  animation-duration: 0.7s;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.36, 0.07, 0.19, 0.97);
+  animation-iteration-count: 1;
 }
 .thank-you-box {
   width: 350px;
